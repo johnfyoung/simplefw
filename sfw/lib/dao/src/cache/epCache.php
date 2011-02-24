@@ -1,13 +1,13 @@
 <?php
 
 /**
- * $Id: epCache.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epCache.php 872 2006-03-22 14:05:54Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
  * @author Trevan Richins <developer@ckiweb.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */
@@ -34,7 +34,7 @@
  * your own wrapper.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */
@@ -86,7 +86,7 @@ if (!class_exists('epConfigurableWithLog')) {
  * Exception class for {@link epCacheObject}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */
@@ -106,7 +106,7 @@ class epExceptionCacheObject extends epException {
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
  * @author Trevan Richins <developer@ckiweb.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */

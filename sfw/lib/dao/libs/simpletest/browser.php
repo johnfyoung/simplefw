@@ -3,7 +3,7 @@
      *	Base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	WebTester
-     *	@version	$Id: browser.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: browser.php 188 2005-04-17 17:18:58Z nauhygon $
      */
     
     /**#@+
@@ -185,7 +185,7 @@
                     SimpleTestOptions::getDefaultProxy(),
                     SimpleTestOptions::getDefaultProxyUsername(),
                     SimpleTestOptions::getDefaultProxyPassword());
-            $this->_page = &new SimplePage();
+            $this->_page = new SimplePage();
             $this->_history = &$this->_createHistory();
             $this->_ignore_frames = false;
         }
@@ -234,12 +234,12 @@
          *    @access protected
          */
         function &_parse($response) {
-            $builder = &new SimplePageBuilder();
+            $builder = new SimplePageBuilder();
             $page = &$builder->parse($response);
             if ($this->_ignore_frames || ! $page->hasFrames()) {
                 return $page;
             }
-            $frameset = &new SimpleFrameset($page);
+            $frameset = new SimpleFrameset($page);
             foreach ($page->getFrameset() as $key => $url) {
                 $frame = &$this->_fetch('GET', $url, array());
                 $frameset->addFrame($frame, $key);

@@ -1,5 +1,5 @@
 <?php
-// $Id: Log.php 22 2009-04-27 21:44:56Z codecrea $
+// $Id: Log.php 1024 2006-12-13 00:50:08Z nauhygon $
 // $Horde: horde/lib/Log.php,v 1.15 2000/06/29 23:39:45 jon Exp $
 
 epDefine('PEAR_LOG_EMERG',    0);     /** System is unusable */
@@ -26,7 +26,7 @@ epDefine('PEAR_LOG_TYPE_FILE',    3); /** Append to a file */
  *
  * @author  Chuck Hagenbuch <chuck@horde.org>
  * @author  Jon Parise <jon@php.net>
- * @version $Revision: 22 $
+ * @version $Revision: 1024 $
  * @since   Horde 1.3
  * @package Log
  */
@@ -97,7 +97,7 @@ class epLib_Log
      *                          false on an error.
      * @access public
      */
-    function &factory($type, $name = '', $ident = '', $conf = array(),
+    static function &factory($type, $name = '', $ident = '', $conf = array(),
                      $maxLevel = PEAR_LOG_DEBUG)
     {
         $type = strtolower($type);
@@ -113,7 +113,12 @@ class epLib_Log
 
         /* If the class exists, return a new instance of it. */
         if (class_exists($class)) {
+/*
+	    New code because assigning the return valure of new by reference is deprecated
             $object =& new $class($name, $ident, $conf, $maxLevel);
+*/
+	    $objectObj = new $class($name, $ident, $conf, $maxLevel);
+	    $object =& $objectObj;
             return $object;
         }
 
@@ -155,7 +160,7 @@ class epLib_Log
      *                          false on an error.
      * @access public
      */
-    function &singleton($type, $name = '', $ident = '', $conf = array(),
+    static function &singleton($type, $name = '', $ident = '', $conf = array(),
                         $maxLevel = PEAR_LOG_DEBUG)
     {
         static $instances;

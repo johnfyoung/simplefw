@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epConfigurable.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epConfigurable.php 816 2006-02-14 03:03:02Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 816 $ $Date: 2006-02-13 22:03:02 -0500 (Mon, 13 Feb 2006) $
  * @package ezpdo
  * @subpackage ezpdo.base 
  */ 
@@ -40,7 +40,7 @@ include_once(EP_SRC_BASE.'/epConfig.php');
  * See {@link epConfig} and {@link epConfig::merge()} for more info. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 816 $ $Date: 2006-02-13 22:03:02 -0500 (Mon, 13 Feb 2006) $
  * @package ezpdo
  * @subpackage ezpdo.base
  * @see epConfig

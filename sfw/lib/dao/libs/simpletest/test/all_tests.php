@@ -1,5 +1,5 @@
 <?php
-    // $Id: all_tests.php 22 2009-04-27 21:44:56Z codecrea $
+    // $Id: all_tests.php 189 2005-04-17 17:38:00Z nauhygon $
     define('TEST', __FILE__);
     require_once('../unit_tester.php');
     require_once('../shell_tester.php');
@@ -18,7 +18,7 @@
         }
     }
 
-    $test = &new AllTests();
+    $test = new AllTests();
     if (SimpleReporter::inCli()) {
         exit ($test->run(new TextReporter()) ? 0 : 1);
     }

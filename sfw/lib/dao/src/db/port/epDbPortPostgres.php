@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbPortPostgres.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbPortPostgres.php 1051 2007-06-20 00:02:31Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 1051 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -21,7 +21,7 @@
  * @author sbogdan <http://www.ezpdo.net/forum/profile.php?id=34>
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
  * 
- * @version $Revision: 22 $
+ * @version $Revision: 1051 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -101,12 +101,12 @@ class epDbPortPostgres extends epDbPortable {
         $columns = array();
         
         // go through reach record
-        $okay = $this->db->rsRestart();
+        $okay = $db->rsRestart();
         while ($okay) {
             $num = $db->rsGetCol('attnum');
             $name = $db->rsGetCol('attname');
             $columns[$num] = $name;
-            $okay = $this->db->rsNext();
+            $okay = $db->rsNext();
         }
 
         // get all the indexes in the table (indkey has a list, space separated)
@@ -125,20 +125,20 @@ class epDbPortPostgres extends epDbPortable {
         while ($okay) {
             
             // skip the primary index
-            if ($this->db->rsGetCol('indisprimary') == 't') {
+            if ($db->rsGetCol('indisprimary') == 't') {
                 // next row
-                $okay = $this->db->rsNext();
+                $okay = $db->rsNext();
                 continue;
             }
 
             // get index name
-            $name = $this->db->rsGetCol('indexname');
-            $unique = $this->db->rsGetCol('indisunique');
+            $name = $db->rsGetCol('indexname');
+            $unique = $db->rsGetCol('indisunique');
             
             // $unique is t if unique
             // $unique is f if index
             $unique = ($unique == 't')? 0 : 1;
-            $indexes = explode(' ', $this->db->rsGetCol('indkey'));
+            $indexes = explode(' ', $db->rsGetCol('indkey'));
             foreach ($indexes as $index) {
                 $ret[$unique][$name][] = $columns[$index];
             }

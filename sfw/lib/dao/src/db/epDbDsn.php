@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbDsn.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbDsn.php 857 2006-03-13 13:27:36Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 857 $ $Date: 2006-03-13 08:27:36 -0500 (Mon, 13 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -20,7 +20,7 @@ include_once(EP_SRC_BASE.'/epBase.php');
  * Exception class for {@link epDbDsn}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 857 $ $Date: 2006-03-13 08:27:36 -0500 (Mon, 13 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db 
  */
@@ -50,7 +50,7 @@ class epExceptionDbDsn extends epException {
  * + password: Password for login
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 857 $ $Date: 2006-03-13 08:27:36 -0500 (Mon, 13 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */

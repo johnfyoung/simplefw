@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epClassMap.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epClassMap.php 998 2006-06-05 12:57:26Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 998 $ $Date: 2006-06-05 08:57:26 -0400 (Mon, 05 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.orm
  */
@@ -25,7 +25,7 @@ include_once(EP_SRC_ORM.'/epFieldMap.php');
  * The exception class of {@link epClassMap}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 998 $ $Date: 2006-06-05 08:57:26 -0400 (Mon, 05 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.orm
  */
@@ -47,7 +47,7 @@ class epExceptionClassMap extends epException {
  * through the factory interface, {@link epClassMapFactory}.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 998 $ $Date: 2006-06-05 08:57:26 -0400 (Mon, 05 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.orm
  */
@@ -725,7 +725,7 @@ class epClassMap extends epContainer {
  * Exception class for {@link epClassMapFactory}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 998 $ $Date: 2006-06-05 08:57:26 -0400 (Mon, 05 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.base 
  */
@@ -736,7 +736,7 @@ class epExceptionClassMapFactory extends epException {
  * The factory class of ezpdo class mapping info. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 998 $ $Date: 2006-06-05 08:57:26 -0400 (Mon, 05 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.orm
  */

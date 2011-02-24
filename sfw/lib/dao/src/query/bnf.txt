@@ -1,5 +1,5 @@
 /**
- * $Id: bnf.txt,v 1.1 2007/08/06 19:18:53 johnyoung Exp $
+ * $Id: bnf.txt 1038 2007-02-11 01:38:59Z nauhygon $
  *
  * The BNF for EZOQL
  *  
@@ -7,7 +7,7 @@
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
  * @author Trevan Richins <developer@ckiweb.com>
- * @version $Revision: 1.1 $
+ * @version $Revision: 1038 $
  * @package ezpdo
  * @subpackage ezpdo.query
  */

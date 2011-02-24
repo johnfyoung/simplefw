@@ -18,7 +18,7 @@
 // |          Tomas V.V.Cox <cox@idecnet.com>                           |
 // +--------------------------------------------------------------------+
 //
-// $Id: PEAR.php 22 2009-04-27 21:44:56Z codecrea $
+// $Id: PEAR.php 219 2005-04-25 23:16:54Z nauhygon $
 //
 
 define('EPLIB_PEAR_ERROR_RETURN',     1);

@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epParser.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epParser.php 945 2006-05-12 19:34:14Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */
@@ -30,7 +30,7 @@ include_once(EP_SRC_BASE_PARSER.'/epLexer.php');
  * epTagParser}).
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */

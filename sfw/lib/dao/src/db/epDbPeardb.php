@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbPeardb.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbPeardb.php 1031 2007-01-19 10:40:49Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1031 $ $Date: 2007-01-19 05:40:49 -0500 (Fri, 19 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -20,7 +20,7 @@ include_once(EP_SRC_DB.'/epDb.php');
  * Exception class for {@link epDbPeardb}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1031 $ $Date: 2007-01-19 05:40:49 -0500 (Fri, 19 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.base 
  */
@@ -52,7 +52,7 @@ class epExceptionDbPeardb extends epExceptionDb {
  * to see how to improve the performance for both DB libs. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1031 $ $Date: 2007-01-19 05:40:49 -0500 (Fri, 19 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */

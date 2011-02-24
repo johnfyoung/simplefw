@@ -10,9 +10,9 @@
  * build a database on any ADOdb-supported platform using a simple
  * XML schema.
  *
- * Last Editor: $Author: codecrea $
+ * Last Editor: $Author: nauhygon $
  * @author Richard Tango-Lowy & Dan Cech
- * @version $Revision: 22 $
+ * @version $Revision: 449 $
  *
  * @package axmls
  * @tutorial getting_started.pkg
@@ -350,7 +350,12 @@ class dbTable extends dbObject {
 	*/
 	function &addIndex( $attributes ) {
 		$name = strtoupper( $attributes['NAME'] );
+/*
+		New code because assigning the return valure of new by reference is deprecated
 		$this->indexes[$name] =& new dbIndex( $this, $attributes );
+*/
+	        $dbIndexObj = new dbIndex( $this, $attributes );
+		$this->indexes[$name] =& $dbIndexObj;
 		return $this->indexes[$name];
 	}
 	
@@ -362,7 +367,12 @@ class dbTable extends dbObject {
 	*/
 	function &addData( $attributes ) {
 		if( !isset( $this->data ) ) {
+/*
+			New code because assigning the return valure of new by reference is deprecated
 			$this->data =& new dbData( $this, $attributes );
+*/
+			$dbObj =  new dbData( $this, $attributes );
+			$this->data =& $dbObj;
 		}
 		return $this->data;
 	}
@@ -1195,7 +1205,7 @@ class dbQuerySet extends dbObject {
 * @tutorial getting_started.pkg
 *
 * @author Richard Tango-Lowy & Dan Cech
-* @version $Revision: 22 $
+* @version $Revision: 449 $
 *
 * @package axmls
 */

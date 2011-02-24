@@ -3,7 +3,7 @@
      *	Base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	WebTester
-     *	@version	$Id: user_agent.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: user_agent.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -172,8 +172,8 @@
          *    @access public
          */
         function SimpleUserAgent() {
-            $this->_cookie_jar = &new SimpleCookieJar();
-            $this->_authenticator = &new SimpleAuthenticator();
+            $this->_cookie_jar = new SimpleCookieJar();
+            $this->_authenticator = new SimpleAuthenticator();
             $this->setMaximumRedirects(DEFAULT_MAX_REDIRECTS);
             $this->_proxy = false;
             $this->_proxy_username = false;
@@ -305,7 +305,7 @@
             if (strncmp($proxy, 'http://', 7) != 0) {
                 $proxy = 'http://'. $proxy;
             }
-            $this->_proxy = &new SimpleUrl($proxy);
+            $this->_proxy = new SimpleUrl($proxy);
             $this->_proxy_username = $username;
             $this->_proxy_password = $password;
         }
@@ -429,7 +429,7 @@
          */
         function &_createHttpRequest($method, $url, $parameters) {
             if ($method == 'POST') {
-                $request = &new SimpleHttpPostRequest(
+                $request = new SimpleHttpPostRequest(
                         $this->_createRoute($url),
                         $parameters);
                 return $request;

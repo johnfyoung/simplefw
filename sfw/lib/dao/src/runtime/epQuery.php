@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epQuery.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epQuery.php 1035 2007-01-31 11:46:48Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1035 $ $Date: 2007-01-31 06:46:48 -0500 (Wed, 31 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.runtime
  */
@@ -20,7 +20,7 @@ include_once(EP_SRC_QUERY.'/epQueryBuilder.php');
  * Exception class for {@link epQuery}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1035 $ $Date: 2007-01-31 06:46:48 -0500 (Wed, 31 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.runtime
  */
@@ -68,7 +68,7 @@ class epExceptionQuery extends epException {
  * rudimentary implementation. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1035 $ $Date: 2007-01-31 06:46:48 -0500 (Wed, 31 Jan 2007) $
  * @package ezpdo
  * @subpackage ezpdo.runtime
  */

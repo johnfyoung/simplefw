@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epGenerator.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epGenerator.php 561 2005-10-14 01:33:52Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 561 $ $Date: 2005-10-13 21:33:52 -0400 (Thu, 13 Oct 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -24,7 +24,7 @@ include_once(EP_SRC_BASE.'/epConfigurableWithLog.php');
  * subclasses should implement method {@link generate()}. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 561 $ $Date: 2005-10-13 21:33:52 -0400 (Thu, 13 Oct 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -99,7 +99,7 @@ abstract class epGenerator extends epConfigurableWithLog {
  * class mapping information. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 561 $ $Date: 2005-10-13 21:33:52 -0400 (Thu, 13 Oct 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */

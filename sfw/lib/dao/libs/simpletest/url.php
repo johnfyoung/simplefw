@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	WebTester
-     *	@version	$Id: url.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: url.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**
@@ -216,7 +216,7 @@
             }
             if (preg_match('/(.*?)@(.*)/', $url, $matches)) {
                 $url = $prefix . $matches[2];
-                $parts = split(":", $matches[1]);
+                $parts = explode(":", $matches[1]);
                 return array(
                         urldecode($parts[0]),
                         isset($parts[1]) ? urldecode($parts[1]) : false);
@@ -292,7 +292,7 @@
          */
         function _parseRequest($raw) {
             $request = new SimpleQueryString();
-            foreach (split("&", $raw) as $pair) {
+            foreach (explode("&", $raw) as $pair) {
                 if (preg_match('/(.*?)=(.*)/', $pair, $matches)) {
                     $request->add($matches[1], urldecode($matches[2]));
                 } elseif ($pair) {
@@ -449,7 +449,7 @@
             if (! $parameters) {
                 return '';
             }
-            $query = &new SimpleQueryString();
+            $query = new SimpleQueryString();
             foreach ($parameters as $key => $value) {
                 $query->add($key, $value);
             }
@@ -493,7 +493,7 @@
          *    @access public
          */
         function clearRequest() {
-            $this->_request = &new SimpleQueryString();
+            $this->_request = new SimpleQueryString();
         }
         
         /**

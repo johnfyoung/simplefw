@@ -1,12 +1,12 @@
 <?php
-// $Id: console.php 22 2009-04-27 21:44:56Z codecrea $
+// $Id: console.php 212 2005-04-18 19:38:02Z nauhygon $
 
 /**
  * The Log_console class is a concrete implementation of the Log::
  * abstract class which writes message to the text console.
  * 
  * @author  Jon Parise <jon@php.net>
- * @version $Revision: 22 $
+ * @version $Revision: 212 $
  * @package Log
  */
 class epLib_Log_console extends epLib_Log

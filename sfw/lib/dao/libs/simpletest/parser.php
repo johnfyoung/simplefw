@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	MockObjects
-     *	@version	$Id: parser.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: parser.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -195,7 +195,7 @@
             $this->_case = $case;
             $this->_regexes = array();
             $this->_parser = &$parser;
-            $this->_mode = &new SimpleStateStack($start);
+            $this->_mode = new SimpleStateStack($start);
             $this->_mode_handlers = array($start => $start);
         }
         
@@ -484,7 +484,7 @@
          *    @static
          */
         function &createLexer(&$parser) {
-            $lexer = &new SimpleLexer($parser, 'text');
+            $lexer = new SimpleLexer($parser, 'text');
             $lexer->mapHandler('text', 'acceptTextToken');
             SimpleSaxParser::_addSkipping($lexer);
             foreach (SimpleSaxParser::_getParsedTags() as $tag) {

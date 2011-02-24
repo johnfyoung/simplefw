@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	UnitTester
-     *	@version	$Id: expectation.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: expectation.php 188 2005-04-17 17:18:58Z nauhygon $
      */
      
     /**#@+
@@ -30,7 +30,7 @@
          *    @param string $message    Customised message on failure.
          */
         function SimpleExpectation($message = '%s') {
-            $this->_dumper = &new SimpleDumper();
+            $this->_dumper = new SimpleDumper();
             $this->_message = $message;
         }
         

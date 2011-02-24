@@ -1,5 +1,5 @@
 <?php
-    // $Id: shell_test.php 22 2009-04-27 21:44:56Z codecrea $
+    // $Id: shell_test.php 189 2005-04-17 17:38:00Z nauhygon $
     
     require_once(dirname(__FILE__) . '/../shell_tester.php');
     
@@ -9,13 +9,13 @@
         }
         
         function testEcho() {
-            $shell = &new SimpleShell();
+            $shell = new SimpleShell();
             $this->assertIdentical($shell->execute('echo Hello'), 0);
             $this->assertWantedPattern('/Hello/', $shell->getOutput());
         }
         
         function testBadCommand() {
-            $shell = &new SimpleShell();
+            $shell = new SimpleShell();
             $this->assertNotEqual($ret = $shell->execute('blurgh! 2>&1'), 0);
         }
     }

@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	UnitTester
-     *	@version	$Id: errors.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: errors.php 188 2005-04-17 17:18:58Z nauhygon $
      */
     /** @ignore - PHP5 compatibility fix. */
     if (! defined('E_STRICT')) {
@@ -80,7 +80,7 @@
          *    @access public
          *    @static
          */
-        function &instance() {
+        static function &instance() {
             static $queue = false;
             if (! $queue) {
                 $queue = new SimpleErrorQueue();

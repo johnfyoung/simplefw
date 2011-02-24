@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbAdodbPdo.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbAdodbPdo.php 927 2006-04-28 17:15:44Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 927 $ $Date: 2006-04-28 13:15:44 -0400 (Fri, 28 Apr 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -20,7 +20,7 @@ include_once(EP_SRC_DB.'/epDbAdodb.php');
  * Exception class for {@link epDbAdodbPdo}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 927 $ $Date: 2006-04-28 13:15:44 -0400 (Fri, 28 Apr 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -31,7 +31,7 @@ class epExceptionDbAdodbPdo extends epExceptionDbAdodb {
  * A wrapper class to use PDO via ADODb
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 927 $ $Date: 2006-04-28 13:15:44 -0400 (Fri, 28 Apr 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */

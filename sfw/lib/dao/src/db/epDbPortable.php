@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbPortable.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbPortable.php 992 2006-06-01 11:04:15Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 992 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -37,7 +37,7 @@ include_once(EP_SRC_ORM . '/epClassMap.php');
  * Credits are due to the two development teams. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 992 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -468,7 +468,7 @@ class epDbPortable {
  * Exception class for epDbPortFactory
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 992 $ $Date: 2006-06-01 07:04:15 -0400 (Thu, 01 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -481,7 +481,7 @@ class epExceptionDbPortFactory extends epException {
  * The factory creates one portability object for each database type
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 992 $ $Date: 2006-06-01 07:04:15 -0400 (Thu, 01 Jun 2006) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */

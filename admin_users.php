@@ -177,7 +177,6 @@ function displayUserList()
 
 function displayUserForm()
 {
-	
 	sfwTemplater::assign("userform_label_uname", ADMIN_USERS_CONTENT_UNAME);
 	sfwTemplater::assign("userform_label_fname", ADMIN_USERS_CONTENT_FNAME);
 	sfwTemplater::assign("userform_label_lname", ADMIN_USERS_CONTENT_LNAME);

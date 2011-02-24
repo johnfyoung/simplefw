@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epObjectRelation.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epObjectRelation.php 936 2006-05-12 19:14:09Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 936 $ $Date: 2006-05-12 15:14:09 -0400 (Fri, 12 May 2006) $
  * @package ezpdo
  * @subpackage ezpdo.orm
  */
@@ -25,7 +25,7 @@ if (interface_exists('epValidateable')) {
  * (class_a, oid_a) and (class_b, oid_b)
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 936 $ $Date: 2006-05-12 15:14:09 -0400 (Fri, 12 May 2006) $
  * @package ezpdo
  * @subpackage ezpdo.runtime
  */

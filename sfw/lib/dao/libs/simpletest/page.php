@@ -3,7 +3,7 @@
      *	Base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	WebTester
-     *	@version	$Id: page.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: page.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -493,7 +493,7 @@
          *    @access public
          */
         function acceptFormStart(&$tag) {
-            $this->_open_forms[] = &new SimpleForm($tag, $this->getUrl());
+            $this->_open_forms[] = new SimpleForm($tag, $this->getUrl());
         }
         
         /**

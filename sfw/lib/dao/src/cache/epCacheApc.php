@@ -1,13 +1,13 @@
 <?php
 
 /**
- * $Id: epCacheApc.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epCacheApc.php 872 2006-03-22 14:05:54Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
  * @author Trevan Richins <developer@ckiweb.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */
@@ -19,7 +19,7 @@ include_once(EP_SRC_CACHE . '/epCache.php');
  * Exception class for {@link epCacheApc}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  */
@@ -33,7 +33,7 @@ class epExceptionCacheApc extends epException {
  * can be easily plugged into EZPDO
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 872 $ $Date: 2006-03-22 09:05:54 -0500 (Wed, 22 Mar 2006) $
  * @package ezpdo
  * @subpackage ezpdo.cache
  * @see http://www.php.net/manual/en/ref.apc.php

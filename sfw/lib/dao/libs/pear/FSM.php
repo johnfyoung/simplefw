@@ -16,7 +16,7 @@
  * | Authors: Jon Parise <jon@php.net>                                    |
  * +----------------------------------------------------------------------+
  *
- * $Id: FSM.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: FSM.php 189 2005-04-17 17:38:00Z nauhygon $
  */
 
 /**
@@ -27,7 +27,7 @@
  * (a finite state machine with memory).
  *
  * @author  Jon Parise <jon@php.net>
- * @version $Revision: 22 $
+ * @version $Revision: 189 $
  * @package FSM
  */
 //class FSM

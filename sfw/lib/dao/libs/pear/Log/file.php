@@ -1,5 +1,5 @@
 <?php
-// $Id: file.php 22 2009-04-27 21:44:56Z codecrea $
+// $Id: file.php 212 2005-04-18 19:38:02Z nauhygon $
 
 /**
  * The Log_file class is a concrete implementation of the Log abstract
@@ -7,7 +7,7 @@
  *
  * @author  Jon Parise <jon@php.net>
  * @author  Roman Neuhauser <neuhauser@bellavista.cz>
- * @version $Revision: 22 $
+ * @version $Revision: 212 $
  * @package Log
  */
 //class Log_file extends Log

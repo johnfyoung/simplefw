@@ -1,5 +1,5 @@
 <?php
-// $Id: composite.php 22 2009-04-27 21:44:56Z codecrea $
+// $Id: composite.php 212 2005-04-18 19:38:02Z nauhygon $
 // $Horde: horde/lib/Log/composite.php,v 1.2 2000/06/28 21:36:13 jon Exp $
 
 /**
@@ -8,7 +8,7 @@
  *
  * @author  Chuck Hagenbuch <chuck@horde.org>
  * @author  Jon Parise <jon@php.net>
- * @version $Revision: 22 $
+ * @version $Revision: 212 $
  * @since Horde 1.3
  * @package Log
  */

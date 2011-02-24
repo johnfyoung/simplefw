@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: ezpdo_runtime.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: ezpdo_runtime.php 755 2006-01-01 02:58:58Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 755 $ $Date: 2005-12-31 21:58:58 -0500 (Sat, 31 Dec 2005) $
  * @package ezpdo
  * @subpackage base
  */

@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epScanner.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epScanner.php 622 2005-11-27 11:51:28Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 622 $ $Date: 2005-11-27 06:51:28 -0500 (Sun, 27 Nov 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -15,7 +15,7 @@
  * The exception class for {@link epScanner}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 622 $ $Date: 2005-11-27 06:51:28 -0500 (Sun, 27 Nov 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -35,7 +35,7 @@ class epExceptionScanner extends epExceptionConfigurableWithLog {
  * from which I borrowed some ideas to make it work. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 622 $ $Date: 2005-11-27 06:51:28 -0500 (Sun, 27 Nov 2005) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */

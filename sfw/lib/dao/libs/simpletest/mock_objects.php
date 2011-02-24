@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	MockObjects
-     *	@version	$Id: mock_objects.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: mock_objects.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -184,7 +184,7 @@
             $descriptions = array();
             if (is_array($args)) {
                 foreach ($args as $arg) {
-                    $dumper = &new SimpleDumper();
+                    $dumper = new SimpleDumper();
                     $descriptions[] = $dumper->describeValue($arg);
                 }
             }
@@ -1109,7 +1109,7 @@
             $code .= Mock::_addMethodList($methods);
             $code .= "\n";
             $code .= "    function $mock_class(&\$test, \$wildcard = MOCK_WILDCARD) {\n";
-            $code .= "        \$this->_mock = &new $mock_base(\$test, \$wildcard, false);\n";
+            $code .= "        \$this->_mock = new $mock_base(\$test, \$wildcard, false);\n";
             $code .= "    }\n";
             $code .= Mock::_chainMockReturns();
             $code .= Mock::_chainMockExpectations();

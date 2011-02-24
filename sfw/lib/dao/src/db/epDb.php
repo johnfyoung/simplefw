@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDb.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDb.php 1044 2007-03-08 02:25:07Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1044 $ $Date: 2007-03-07 21:25:07 -0500 (Wed, 07 Mar 2007) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -20,7 +20,7 @@ include_once(EP_SRC_BASE.'/epBase.php');
  * Exception class for {@link epDb}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1044 $ $Date: 2007-03-07 21:25:07 -0500 (Wed, 07 Mar 2007) $
  * @package ezpdo
  * @subpackage ezpdo.db 
  */
@@ -51,7 +51,7 @@ class epExceptionDb extends epException {
  * (see {@link epDbPdo}). 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1044 $ $Date: 2007-03-07 21:25:07 -0500 (Wed, 07 Mar 2007) $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -423,7 +423,7 @@ abstract class epDb {
         }
         
         // the quoting symbol
-        $q = $q = $this->_getNameQuote();
+        $q = $this->_getNameQuote();
         
         // split input into items (xx.yy.zz)
         $quoted = array();

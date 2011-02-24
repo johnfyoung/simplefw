@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epQueryLexer.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epQueryLexer.php 1038 2007-02-11 01:38:59Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 1038 $
  * @package ezpdo
  * @subpackage ezpdo.query
  */
@@ -68,7 +68,7 @@ epDefine('EPQ_T_UNKNOWN');
  * + char, the position of the starting char in the starting line from which this error occurs
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 1038 $
  * @package ezpdo
  * @subpackage ezpdo.query
  */

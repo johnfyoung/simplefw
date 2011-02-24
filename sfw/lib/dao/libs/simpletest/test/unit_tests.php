@@ -1,5 +1,5 @@
 <?php
-    // $Id: unit_tests.php 22 2009-04-27 21:44:56Z codecrea $
+    // $Id: unit_tests.php 189 2005-04-17 17:38:00Z nauhygon $
     if (! defined('TEST')) {
         define('TEST', __FILE__);
     }
@@ -38,7 +38,7 @@
     }
     
     if (TEST == __FILE__) {
-        $test = &new UnitTests();
+        $test = new UnitTests();
         if (SimpleReporter::inCli()) {
             exit ($test->run(new TextReporter()) ? 0 : 1);
         }

@@ -1,5 +1,5 @@
 <?php
-    // $Id: dumper_test.php 22 2009-04-27 21:44:56Z codecrea $
+    // $Id: dumper_test.php 189 2005-04-17 17:38:00Z nauhygon $
 
     class DumperDummy {
     }

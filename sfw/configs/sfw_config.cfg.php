@@ -4,8 +4,8 @@
  * by johnny
  */
  
- define("URL_ROOT", "/~johnyoung/simplefw");
+ define("URL_ROOT", "/");
  define("LOG_LEVEL", LOGGER_LEVEL_ERROR);
  define("SESSION_NAME", "SFWSESSION");
-
+ define("TEMPLATE_ENGINE", 'smarty');
 ?>

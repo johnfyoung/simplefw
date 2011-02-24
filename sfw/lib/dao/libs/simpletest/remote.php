@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	UnitTester
-     *	@version	$Id: remote.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: remote.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -101,7 +101,7 @@
                     trigger_error('Cannot read remote test URL [' . $this->_dry_url . ']');
                     return false;
                 }
-                $reporter = &new SimpleReporter();
+                $reporter = new SimpleReporter();
                 $parser = &$this->_createParser($reporter);
                 if (! $parser->parse($xml)) {
                     trigger_error('Cannot parse incoming XML from [' . $this->_dry_url . ']');

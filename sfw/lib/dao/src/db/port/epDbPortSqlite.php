@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epDbPortSqlite.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epDbPortSqlite.php 1030 2007-01-19 10:38:55Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 1030 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */
@@ -15,7 +15,7 @@
  * Class to handle database portability for Sqlite
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 1030 $
  * @package ezpdo
  * @subpackage ezpdo.db
  */

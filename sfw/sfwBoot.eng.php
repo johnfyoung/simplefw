@@ -59,6 +59,8 @@
 	require_once SFW_PATH . '/sfwUtility.eng.php';
 	require_once SFW_PATH . '/sfwErrors.eng.php';
 	require_once SFW_PATH . '/sfwLanguage.eng.php';
+  require_once SFW_PATH . '/sfwTemplaterEngine_Smarty.eng.php';
+  require_once SFW_PATH . '/sfwTemplaterEngine_PHP.eng.php';
 	require_once SFW_PATH . '/sfwTemplater.eng.php';
 	require_once SFW_PATH . '/sfwDAO.eng.php';
 	require_once SFW_PATH . '/sfwSessionHandler.eng.php';
@@ -71,6 +73,8 @@
 	set_exception_handler('sfwExceptionHandler::uncaught');
 	
 	sfwTemplater::debug(false);
+
+  
  }
  
 ?>

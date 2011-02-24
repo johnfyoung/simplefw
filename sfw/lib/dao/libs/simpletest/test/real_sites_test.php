@@ -1,5 +1,5 @@
 <?php
-    // $Id: real_sites_test.php 22 2009-04-27 21:44:56Z codecrea $
+    // $Id: real_sites_test.php 189 2005-04-17 17:38:00Z nauhygon $
     
     require_once(dirname(__FILE__) . '/../web_tester.php');
 

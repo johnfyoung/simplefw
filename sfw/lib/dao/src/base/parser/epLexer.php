@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epLexer.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epLexer.php 945 2006-05-12 19:34:14Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */
@@ -39,7 +39,7 @@ epDefine('EPL_T_UNKNOWN');
  * + char, the position of the starting char from which this token is found
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */
@@ -100,7 +100,7 @@ class epToken extends epBase {
  * + char, the position of the starting char in the line
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */
@@ -157,7 +157,7 @@ class epLexerError extends epBase {
  * A stream class for the lexer
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $
+ * @version $Revision: 945 $
  * @package ezpdo
  * @subpackage ezpdo.parser
  */

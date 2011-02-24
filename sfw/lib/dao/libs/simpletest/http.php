@@ -3,7 +3,7 @@
      *	base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	WebTester
-     *	@version	$Id: http.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: http.php 188 2005-04-17 17:18:58Z nauhygon $
      */
 
     /**#@+
@@ -569,7 +569,7 @@
             $this->_cookies = array();
             $this->_authentication = false;
             $this->_realm = false;
-            foreach (split("\r\n", $headers) as $header_line) {
+            foreach (explode("\r\n", $headers) as $header_line) {
                 $this->_parseHeaderLine($header_line);
             }
         }
@@ -702,7 +702,7 @@
          *    @access private
          */
         function _parseCookie($cookie_line) {
-            $parts = split(";", $cookie_line);
+            $parts = explode(";", $cookie_line);
             $cookie = array();
             preg_match('/\s*(.*?)\s*=(.*)/', array_shift($parts), $cookie);
             foreach ($parts as $part) {
@@ -764,13 +764,13 @@
         function _parse($raw) {
             if (! $raw) {
                 $this->_setError('Nothing fetched');
-                $this->_headers = &new SimpleHttpHeaders('');
+                $this->_headers = new SimpleHttpHeaders('');
             } elseif (! strstr($raw, "\r\n\r\n")) {
                 $this->_setError('Could not parse headers');
-                $this->_headers = &new SimpleHttpHeaders($raw);
+                $this->_headers = new SimpleHttpHeaders($raw);
             } else {
-                list($headers, $this->_content) = split("\r\n\r\n", $raw, 2);
-                $this->_headers = &new SimpleHttpHeaders($headers);
+                list($headers, $this->_content) = explode("\r\n\r\n", $raw, 2);
+                $this->_headers = new SimpleHttpHeaders($headers);
             }
         }
         

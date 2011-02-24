@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epConfig.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epConfig.php 969 2006-05-19 12:20:19Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 969 $ $Date: 2006-05-19 08:20:19 -0400 (Fri, 19 May 2006) $
  * @package ezpdo
  * @subpackage ezpdo.base 
  */ 
@@ -22,7 +22,7 @@ include_once(EP_SRC_BASE.'/epUtils.php');
  * Exception class for {@link epConfig}
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 969 $ $Date: 2006-05-19 08:20:19 -0400 (Fri, 19 May 2006) $
  * @package ezpdo
  * @subpackage ezpdo.runtime
  */
@@ -140,7 +140,7 @@ class epExceptionConfig extends epException {
  * </pre>
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 969 $ $Date: 2006-05-19 08:20:19 -0400 (Fri, 19 May 2006) $
  * @package ezpdo
  * @subpackage ezpdo.base
  */

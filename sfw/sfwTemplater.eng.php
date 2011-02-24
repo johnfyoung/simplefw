@@ -5,7 +5,6 @@
  * by johnny
  */
  
-require_once SFW_PATH . '/lib/smarty/Smarty.class.php';
 define("SFW_TPLS", "file:" . SFW_PATH . "/templates");
 
 // TODO fix the js include - it needs a url path not physical path
@@ -15,59 +14,51 @@ class sfwTemplater
 	/**
 	 * the Singleton instance
 	 */
-	private static $_instance;
+	protected static $_instance;
 	
 	/**
-	 * the smarty delegate
+	 * Template Engine
 	 */
-	private static $_smarty;
+	protected static $_engine;
 	
 	/**
 	 * array of .tpl files
 	 */
-	private static $_templates;
+	protected static $_templates;
 	
 	/**
 	 * array of .js files to be included in the page head 
 	 */
-	private static $_tpl_head_javascript;
+	protected static $_tpl_head_javascript;
 	
 	/**
 	 * array of .js files to be included at the end of the page body
 	 */
-	private static $_tpl_foot_javascript;
+	protected static $_tpl_foot_javascript;
 	
 	/**
 	 * array of .css files to be included in the page head
 	 */
-	private static $_tpl_head_css;
+	protected static $_tpl_head_css;
 	
 	/**
 	 * the page title
 	 */
-	private static $_tpl_head_title;
+	protected static $_tpl_head_title;
 	
 	/**
 	 * array of meta tags to be written into the page head
 	 * array is formatted like so:
 	 * [name1 => [tag1, tag2, ...], name2=>[tag1, tag2, ...], ...]
 	 */
-	private static $_tpl_head_meta;
+	protected static $_tpl_head_meta;
 	
-	private static $_tpl_body_tags;
+	protected static $_tpl_body_tags;
 
-	private static $_tpl_debug_vals;
+	protected static $_tpl_debug_vals;
 	
-	private function __construct()
+	protected function __construct()
 	{
-		$this->_smarty = new Smarty();
-		
-		$this->_smarty->template_dir = ROOT_PATH . '/templates';
-		$this->_smarty->compile_dir = SFW_PATH . '/compiled/smarty';
-		$this->_smarty->cache_dir = SFW_PATH . '/cache/smarty';
-		$this->_smarty->config_dir = SFW_PATH . '/configs/smarty';
-		$this->_smarty->debugging = true;
-		
 		$this->_tpl_head_javascript = array();
 		$this->_tpl_foot_javascript = array();
 		$this->_tpl_head_css = array();
@@ -77,6 +68,18 @@ class sfwTemplater
 		$this->_tpl_head_title = "Page Title Goes Here";
 		$this->_tpl_body_tags = array();
 		$this->_tpl_debug_val = array();
+		
+	  switch(TEMPLATE_ENGINE)
+    {
+      case 'php':
+        $this->_engine = new sfwTemplaterEngine_PHP();
+        break;
+      case 'smarty':
+        $this->_engine = new sfwTemplaterEngine_Smarty();
+        break;      	
+      default:
+        $this->_engine = new sfwTemplaterEngine_PHP();      	
+    }
 	}
 	
 	public static function getInstance()
@@ -92,7 +95,7 @@ class sfwTemplater
 	public static function debug($debug)
 	{
 		$t = self::getInstance();
-		$t->_smarty->debugging = $debug;
+		$t->_engine->debug($debug);
 		
 	}
 	
@@ -373,37 +376,37 @@ class sfwTemplater
 	
 	public static function assign($var, $val)
 	{
-		$t = self::getInstance();
-		$t->_smarty->assign($var, $val);
+		$t = sfwTemplater::getInstance();
+		$t->_engine->assign($var, $val);
 	}
 	
 	public static function display()
 	{
-		$t = self::getInstance();
-		$t->assign('head_js', sfwTemplater::head_js());
-		$t->assign('head_css', sfwTemplater::head_css());
-		$t->assign('foot_js', sfwTemplater::foot_js());
-		$t->assign('head_title', sfwTemplater::head_title());
-		$t->assign('head_meta', sfwTemplater::head_meta());
-		$t->assign('body_id', sfwTemplater::body_id());
-		$t->assign('body_class', sfwTemplater::body_class());
-		$t->assign('body_tags', sfwTemplater::body_tags());
-		$t->assign('body_onload', sfwTemplater::body_onload());
-		
-		foreach($t->_templates as $tpl)
-		{
-			$t->_smarty->display($tpl);
-		}
-		
-		if(!empty($t->_tpl_debug_vals))
-		{
-			$t->_smarty->assign("sfw_debug", $t->_tpl_debug_vals);
-			$t->_smarty->display(SFW_TPLS . '/page_debug.tpl');
-		}
-		
-		$t->_smarty->display(SFW_TPLS . '/page_foot.tpl');
-		ob_end_flush();
-		sfwLogger::log("sfwTemplater: done displaying! ******************" ,LOGGER_LEVEL_DEBUG);
+    $t = sfwTemplater::getInstance();
+    $t->_engine->assign('head_js', sfwTemplater::head_js());
+    $t->_engine->assign('head_css', sfwTemplater::head_css());
+    $t->_engine->assign('foot_js', sfwTemplater::foot_js());
+    $t->_engine->assign('head_title', sfwTemplater::head_title());
+    $t->_engine->assign('head_meta', sfwTemplater::head_meta());
+    $t->_engine->assign('body_id', sfwTemplater::body_id());
+    $t->_engine->assign('body_class', sfwTemplater::body_class());
+    $t->_engine->assign('body_tags', sfwTemplater::body_tags());
+    $t->_engine->assign('body_onload', sfwTemplater::body_onload());
+    
+    foreach($t->_templates as $tpl)
+    {
+      $t->_engine->display($tpl);
+    }
+    
+    if(!empty($t->_tpl_debug_vals))
+    {
+      $t->_engine->assign("sfw_debug", $t->_tpl_debug_vals);
+      $t->_engine->display(SFW_TPLS . '/page_debug.tpl');
+    }
+    
+    $t->_engine->display(SFW_TPLS . '/page_foot.tpl');
+    ob_end_flush();
+    sfwLogger::log("sfwTemplater_Smarty: done displaying! ******************" ,LOGGER_LEVEL_DEBUG);
 	}
 	
 	public static function dbgVal($key, $val)
@@ -413,9 +416,10 @@ class sfwTemplater
 	}
 }
 
-$sfwT = sfwTemplater::getInstance();
-sfwTemplater::addJSFile(URL_PROTOCOL. URL_HOST . URL_ROOT . "/sfw/lib/js/scriptaculous/prototype.js");
-sfwTemplater::addJSFile(URL_PROTOCOL. URL_HOST . URL_ROOT . "/sfw/lib/js/scriptaculous/scriptaculous.js");
-sfwTemplater::assign("_ROOTURL_", URL_ROOT);
+  // Init Template Engine
+  $sfwT = sfwTemplater::getInstance();
+  sfwTemplater::addJSFile(URL_PROTOCOL. URL_HOST . URL_ROOT . "/sfw/lib/js/scriptaculous/prototype.js");
+  sfwTemplater::addJSFile(URL_PROTOCOL. URL_HOST . URL_ROOT . "/sfw/lib/js/scriptaculous/scriptaculous.js");
+  sfwTemplater::assign("_ROOTURL_", URL_ROOT);
  
 ?>

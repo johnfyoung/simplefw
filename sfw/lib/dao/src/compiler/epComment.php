@@ -1,12 +1,12 @@
 <?php
 
 /**
- * $Id: epComment.php 22 2009-04-27 21:44:56Z codecrea $
+ * $Id: epComment.php 1013 2006-09-27 01:55:43Z nauhygon $
  * 
  * Copyright(c) 2005 by Oak Nauhygon. All rights reserved.
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -22,7 +22,7 @@
  * </pre>
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -185,7 +185,7 @@ class epComment {
  * into orm attributes. To get the attribute value, use {@link get()}. 
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  * @abstract
@@ -242,7 +242,7 @@ abstract class epTag {
  * </ol>
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -310,7 +310,7 @@ class epClassTag extends epTag {
  * </ol>
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -362,7 +362,7 @@ epDefine('EPL_T_UNIQUE');
  * The lexer for ORM tag value
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */
@@ -444,7 +444,7 @@ class epTagLexer extends epLexer {
  * The parser for ORM tag value
  * 
  * @author Oak Nauhygon <ezpdo4php@gmail.com>
- * @version $Revision: 22 $ $Date: 2009-04-27 14:44:56 -0700 (Mon, 27 Apr 2009) $
+ * @version $Revision: 1013 $ $Date: 2006-09-26 21:55:43 -0400 (Tue, 26 Sep 2006) $
  * @package ezpdo
  * @subpackage ezpdo.compiler
  */

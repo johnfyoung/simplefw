@@ -3,7 +3,7 @@
      *	Base include file for SimpleTest
      *	@package	SimpleTest
      *	@subpackage	UnitTester
-     *	@version	$Id: simple_test.php 22 2009-04-27 21:44:56Z codecrea $
+     *	@version	$Id: simple_test.php 576 2005-10-19 00:07:57Z nauhygon $
      */
     
     /**#@+
@@ -599,7 +599,7 @@
             for ($i = 0; $i < count($this->_test_cases); $i++) {
                 if (is_string($this->_test_cases[$i])) {
                     $class = $this->_test_cases[$i];
-                    $test = &new $class();
+                    $test = new $class();
                     $test->run($reporter);
                 } else {
                     $this->_test_cases[$i]->run($reporter);
