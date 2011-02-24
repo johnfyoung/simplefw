@@ -1,0 +1,52 @@
+2009-11-09 11:04:35 -- sfwDAO:: listByQuery() caught exception -- Output directory [/Users/johnyoung/Sites/simplefw/sfw/dao/../configs/dao/../../compiled/dao] is not writable.
+2009-11-09 11:04:39 -- sfwDAO:: listByQuery() caught exception -- Output directory [/Users/johnyoung/Sites/simplefw/sfw/dao/../configs/dao/../../compiled/dao] is not writable.
+2009-11-09 11:05:45 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:45 -- sfwDAO: store() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:45 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:45 -- sfwAuthorization: currentUser() - cought an authentication problem
+2009-11-09 11:05:46 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:46 -- sfwDAO: store() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:46 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:05:46 -- sfwAuthorization: currentUser() - cought an authentication problem
+2009-11-09 11:08:47 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwDAO: store() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwAuthorization: currentUser() - cought an authentication problem
+2009-11-09 11:08:47 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwDAO: store() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwDAO:: listByQuery() caught exception -- Cannot connect db: mysql error: [2002: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)] in CONNECT(localhost, 'sluser', '****', ezSL)
+
+2009-11-09 11:08:47 -- sfwAuthorization: currentUser() - cought an authentication problem
+2009-11-09 11:16:34 -- sfwDAO:: listByQuery() caught exception -- Cannot execute query: mysql error: [1071: Specified key was too long; max key length is 1000 bytes] in EXECUTE("CREATE UNIQUE INDEX `idx_idx_Permission_url` ON `sfwPermission` (`url`);")
+
+2009-11-09 11:16:34 -- sfwAuthorization: currentUser() - cought an authentication problem
+2009-11-09 11:16:34 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:34:36 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:34:36 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:41:05 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:41:05 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:44:13 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 20:44:14 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:04:01 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:04:01 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:05:26 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:05:26 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:08:05 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:08:07 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:09:14 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:09:19 -- sfwAuthorization: currentUser() - cought an authentication problem
+2010-02-26 21:26:08 -- sfwDAO: store() caught exception -- Cannot execute query: mysql error: [1062: Duplicate entry 'freddy' for key 2] in EXECUTE("INSERT INTO `sfwUser` (`uname`, `email`, `password`, `fname`, `lname`, `nick`) VALUES ('freddy', 'johnyoung@amigovino.com', 'Eã<5Í<¤±b@cRê?é©~¬òðóµÎâ', 'fred', 'flintstone', 'freed');")
+
+2010-02-26 21:26:08 -- sfwDAO: store() caught exception -- Cannot execute query: mysql error: [1062: Duplicate entry 'freddy' for key 2] in EXECUTE("INSERT INTO `sfwUser` (`uname`, `email`, `password`, `fname`, `lname`, `nick`) VALUES ('freddy', 'johnyoung@amigovino.com', 'Eã<5Í<¤±b@cRê?é©~¬òðóµÎâ', 'fred', 'flintstone', 'freed');")
+

@@ -1,0 +1,31 @@
+<?php
+/* $Id: engine.lang 22 2009-04-27 21:44:56Z codecrea $
+ * engine.lang
+ * Created on Aug 1, 2007
+ * by johnny
+ */
+
+/*********** USER *******************/
+define("LANG_SFUSER_ERROR_TYPE","Cannot Verify a non-sfwUser type");
+
+
+/*********** AUTHENTICATION *******************/
+define("LANG_AUTH_ERROR_UNAMEEMPTY", "Username is Empty");
+define("LANG_AUTH_ERROR_PASSEMPTY", "Password is Empty");
+
+define("LANG_AUTH_FAILURE_NOTFOUND", "User not found");
+define("LANG_AUTH_FAILURE_BADPASS", "Incorrect Password");
+
+/*********** AUTHORIZATION *******************/
+define("LANG_AUTH_FAILURE_NOTALLOWED", "You are not permitted here");
+ 
+/*********** COOKIE *******************/ 
+define("LANG_COOKIE_ERROR_NOCOOKIE", "No Cookie is Set");
+define("LANG_COOKIE_ERROR_MALCOOKIE", "Malformed cookie");
+define("LANG_COOKIE_ERROR_VERCOOKIE", "Version mismatch");
+define("LANG_COOKIE_ERROR_EXPCOOKIE", "Cookie expired");
+define("LANG_COOKIE_ERROR_RESET", "Cookie Was Reset - new Authentication required");
+
+/*********** DAOFACTORY *******************/
+define("LANG_DAO_ERROR_TYPE","Cannot Verify a non-epObject type");
+?>

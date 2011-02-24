@@ -1,0 +1,45 @@
+$Id: README.info 22 2009-04-27 21:44:56Z codecrea $
+
+This is Simple Framework (simplefw).  It is a distro of EZPDO (data access objects),
+Smarty (templating and page caching) and Scriptaculous/Prototype (AJAX controls).
+(edited by jy on Aug 16, 2007)
+
+I wouldn't say that the framework is scalable.  EZPDO is kinda limiting in that regard (i.e., I
+think it adds overhead that may be prohibitive in heavy loads).  That said, it does a good job
+of quickly assembling persistent data storage.  Almost no SQL.  But no evolutionary changes, i.e., 
+changes to your data model don't flow to established tables.  I've just been dropping old tables and
+letting EZPDO recreate them.  This is OK for dev environments but would be prohibitive in live sites.
+
+Requirements (or at least what I've dev'd on):
+ - PHP 5.2.2
+ - MySQL 5.0.27
+ 
+ Definitely requires PHP 5, I don't know about MySQL req.  Since I've tried not to 
+ touch mysql (i.e., that's all handled by EZPDO) I guess that the mysql requirement 
+ should be the same as EZPDO.
+ 
+ php.ini
+ - magic_quotes_gpc = off  (recommended)
+ - allow_url_fopen = off  (recommended)
+ 
+Install:
+1) create a database in mysql like:
+create database yourdatabase character set "utf8";
+
+2) create a user for your database like:
+grant all on yourdatabase.* to 'yourusername'@'localhost' identified by 'password';
+
+3) after unpacking simplefw into your web directory, the following folders need to be writable by 
+   the web server:
+	sfw/complied - the compiled DAO's and smarty templates
+	sfw/logs - you know, for logs
+	sfw/cache - where smarty stashes cached web pages
+
+4) /sfw/configs/dao/config.xml needs some editing:
+	makesure <default_dsn>mysql://yourusername:password@localhost/yourdatabase</default_dsn>
+	matches your database settings
+5) /sfw/configs/sfw_config. needs some editing:
+   make sure the URL_ROOT is the path of your install on your server
+
+After this, you can start using the stuff.  Put your classes in the data_Classes folder.  They will be auto included.
+To persist a class, follow the EZPDO guide.  Place all of your smarty templates in the templates folder.

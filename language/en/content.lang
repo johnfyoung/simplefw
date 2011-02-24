@@ -1,0 +1,35 @@
+<?php
+/**
+ * $Id: content.lang 24 2009-04-27 22:05:08Z codecrea $
+ */
+
+define("MAIN_CONTENT_MSG", "Greetings and Salutations!");
+define("MAIN_CONTENT_TITLE", "Simple Framework Sample Page");
+define("MAIN_CONTENT_ADMINLINK", "Click here go to the admin section");
+define("MAIN_CONTENT_USERSALUTATION", "Welcome ");
+define("ADMIN_CONTENT_TITLE", "Simple Framework Admin Page");
+define("ADMIN_CONTENT_MSG", "You are now authorized to access the admin section");
+define("ADMIN_CONTENT_TASK_USERS", "User Management");
+define("ADMIN_USERS_CONTENT_TITLE", "Simple Framework - User Management");
+define("ADMIN_USERS_CONTENT_INPUTREQUIRED", "this field is required");
+define("ADMIN_USERS_CONTENT_MSG", "Use this section to manage site user access.");
+define("ADMIN_USERS_CONTENT_ADDUSER", "Add User Form");
+define("ADMIN_USERS_CONTENT_UNAME", "User Name");
+define("ADMIN_USERS_CONTENT_FNAME", "First Name");
+define("ADMIN_USERS_CONTENT_LNAME", "Last Name");
+define("ADMIN_USERS_CONTENT_EMAIL", "Email");
+define("ADMIN_USERS_CONTENT_PASSWORD", "Password");
+define("ADMIN_USERS_CONTENT_PASSWORDCONFIRM", "Confirm Password");
+define("ADMIN_USERS_CONTENT_NICK", "Nickname");
+define("ADMIN_USERS_CONTENT_ADDUSERCONFIRM", "New User Added!");
+define("ADMIN_USERS_CONTENT_ADDUSERERRORS", "There were problems adding a user to the system:");
+define("ADMIN_USERS_CONTENT_NOUSERS", "Currently no users in the system");
+define("ADMIN_USERS_CONTENT_USERLIST", "Current List of Users");
+define("ADMIN_USERS_CONTENT_USERNOEXIST", "That user doesn't exist in the system");
+define("ADMIN_USERS_CONTENT_EDITUSER_TITLE", "Simple Framework - Edit User");
+define("ADMIN_USERS_CONTENT_EDITUSER_MSG", "Make Changes to a User");
+define("ADMIN_USERS_CONTENT_EDITUSER", "Edit User Info");
+define("ADMIN_USERS_CONTENT_EDITUSERCONFIRM", "User Modified!");
+define("ADMIN_USERS_CONTENT_EDITUSERERRORS", "There were problems modifying the user:");
+define("ADMIN_CONTENT_ACTION", "Action");
+?>

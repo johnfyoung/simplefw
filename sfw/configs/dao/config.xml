@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<options>
+	<recursive>false</recursive>
+	<source_dirs>../../../data_classes,../../dao/classes</source_dirs>
+	<compiled_dir>../../compiled/dao</compiled_dir>
+	<recursive>true</recursive>
+	<autoload>true</autoload>
+	<default_oid_column>id</default_oid_column>
+	<default_dsn>mysql://sluser:password@localhost/ezSL</default_dsn>
+	<flush_before_find>false</flush_before_find>
+	<auto_flush>false</auto_flush>
+	<show_sql>false</show_sql>
+	<db_lib>adodb</db_lib>
+	<log_console>true</log_console>
+	<log_file>../../logs/ezpdo.log</log_file>
+</options>

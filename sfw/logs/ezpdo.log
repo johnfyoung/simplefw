@@ -1,0 +1,20 @@
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwPermission.php] - start
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwPermission]
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwPermission] - end.
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwPermission.php] - end
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwRole.php] - start
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwRole]
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwRole] - end.
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwRole.php] - end
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwSession.php] - start
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwSession]
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwSession] - end.
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwSession.php] - end
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwUser.php] - start
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwUser]
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwUser] - end.
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwUser.php] - end
+Nov 09 11:05:44 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwVariable.php] - start
+Nov 09 11:05:44 epClassParser [info] Parsing class [sfwVariable]
+Nov 09 11:05:45 epClassParser [info] Parsing class [sfwVariable] - end.
+Nov 09 11:05:45 epClassCompiler [info] Parsing file [/Users/johnyoung/Sites/simplefw/sfw/dao/classes/sfwVariable.php] - end
