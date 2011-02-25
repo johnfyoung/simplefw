@@ -19,7 +19,7 @@ class sfwTemplaterEngine_Smarty
   {
     $this->_smarty = new Smarty();
     
-    $this->_smarty->template_dir = ROOT_PATH . '/templates';
+    $this->_smarty->template_dir = APPLICATION_PATH . '/templates';
     $this->_smarty->compile_dir = SFW_PATH . '/compiled/smarty';
     $this->_smarty->cache_dir = SFW_PATH . '/cache/smarty';
     $this->_smarty->config_dir = SFW_PATH . '/configs/smarty';

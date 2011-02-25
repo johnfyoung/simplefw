@@ -5,7 +5,7 @@
  * by johnny
  */
 
-require_once 'sfw/sfwBoot.eng.php';
+require_once "../boot.eng.php";
 
 $redirect = isset($_GET['originating_uri']) ? $_GET['originating_uri'] : (isset($_POST['originating_uri']) ? $_POST['originating_uri'] : "index.php");
 $submit = isset($_POST['form_login_submit']) ? $_POST['form_login_submit'] : "";

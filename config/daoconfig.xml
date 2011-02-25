@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <options>
 	<recursive>false</recursive>
-	<source_dirs>../../../data_classes,../../dao/classes</source_dirs>
-	<compiled_dir>../../compiled/dao</compiled_dir>
+	<source_dirs>../application/data_classes,../sfw/data_classes</source_dirs>
+	<compiled_dir>../sfw/compiled/dao</compiled_dir>
 	<recursive>true</recursive>
 	<autoload>true</autoload>
 	<default_oid_column>id</default_oid_column>
@@ -12,5 +12,5 @@
 	<show_sql>false</show_sql>
 	<db_lib>adodb</db_lib>
 	<log_console>true</log_console>
-	<log_file>../../logs/ezpdo.log</log_file>
+	<log_file>../sfw/logs/ezpdo.log</log_file>
 </options>

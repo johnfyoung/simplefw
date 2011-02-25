@@ -1,0 +1,9 @@
+.DS_Ignore
+.buildpath
+.project
+.settings/
+
+sfw/compiled/dao/*
+sfw/compiled/smarty/*
+sfw/compiled/logs/*
+

@@ -5,7 +5,7 @@
  * by johnny
  */
 
-require_once 'sfw/sfwBoot.eng.php';
+require_once "../boot.eng.php";
 
 sfwTemplater::setTitle(MAIN_CONTENT_TITLE);
 sfwTemplater::addTpl('main.tpl');

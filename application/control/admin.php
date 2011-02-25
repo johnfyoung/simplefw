@@ -5,7 +5,7 @@
  * by johnny
  */
  
-require_once 'sfw/sfwBoot.eng.php';
+require_once "../boot.eng.php";
 
 sfwAuthorization::grantCurrent(sfwAuthorization::getRole('admin'));
 
