@@ -8,12 +8,17 @@ Options -Indexes
 DirectoryIndex index.php
 
 RewriteEngine on
-#RewriteCond $1 !^(index\.php|robots\.txt)
-#RewriteRule ^(.*\.html)$ index.php/$1 [L]
 
 RewriteBase /~johnyoung/simplefw/
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond $1 !^(application\/control\/.*)
+RewriteRule ^(.*)$ index.php [L,R]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteCond $1 !^(index\.php|robots\.txt)
-#RewriteRule ^(.*)$ index.php?/$1 [L] 
-RewriteRule ^(.*)$ application/control/$1 [L] 
+RewriteCond $1 !^$
+RewriteRule ^(.*)$ application/control/$1/ [L]
+
+RewriteCond $1 ^$
+RewriteRule ^$ application/control/index.php [L]
